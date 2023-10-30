@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <style>
+    body {
+      background-image: url('./images/latar.jpg');
+      background-size: cover;
+      /* Mengisi seluruh latar belakang */
+      background-repeat: no-repeat;
+      /* Menghindari pengulangan gambar latar belakang */
+    }
+
+    /* .login-form {
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(5px);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.3); /* Menjaga latar belakang luar elemen 
+    } */
+
+
+    .login__header .image1 {
+      margin-bottom: -130px;
+    }
+
+    .login__header .image2 {
+      margin-bottom: -60px;
+    }
+
+    /* .login__header .love {
+      /* margin-bottom: -50px; 
+      width: 10px;
+    } */
+
+    .login__header img {
+      width: 300px;
+      /* Sesuaikan ukuran gambar game sesuai kebutuhan */
+      /* margin-right: 100px; Atur jarak antara gambar "game" dan "hs" */
+    }
+
+    .login__header {
+      margin-top: -90px;
+    }
+  </style>
+
+  <script defer src="./js/login.js"></script>
+  <link rel="shortcut icon" href="./images/logoo.png" type="image/x-icon">
+  <title>Memory Game</title>
+</head>
+
+<body>
+
+  <form class="login-form">
+
+    <div class="login__header">
+      <div class="image1"><img src="./images/game.png" alt="logo"></div>
+      <div class="love"><img src="./images/love.png" alt="love"
+          style="width: 65px; margin-left: 155px; margin-bottom: -100px;"></div>
+      <div class="image2"><img src="./images/hs.png" alt="hyesoo"></div>
+      <!-- <h1>KHS Memory Game</h1> -->
+    </div>
+
+    <input type="text" placeholder="Name" class="login__input">
+    <button type="submit" class="login__button">Play</button>
+
+  </form>
+
+</body>
+
+</html>

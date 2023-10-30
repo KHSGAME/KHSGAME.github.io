@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/game.css">
+
+  <script defer src="../js/game.js"></script>
+  <style>
+    .modal-content h2 {
+      margin-bottom: 10px; /* Tambahkan margin bawah 10px pada setiap elemen <p> dalam modal. */
+    }
+    .modal-content p {
+      margin-bottom: 10px; /* Tambahkan margin bawah 10px pada setiap elemen <p> dalam modal. */
+    }
+
+    .modal-content button {
+      margin-top: 10px; /* Tambahkan margin atas 10px pada setiap tombol dalam modal. */
+    }
+
+    /* Memisahkan tombol "Lanjut Bermain" dan "Keluar" dengan garis vertikal (||) */
+    .modal-content button + button {
+      margin-left: 10px; /* Tambahkan margin kiri 10px pada tombol kedua (yang kedua). */
+    }
+
+    .modal-content button {
+      background-color: #f56b6b;
+      color: white;
+      border: 2px solid #8f1d1d;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .modal-content button:hover {
+      background-color: #8f1d1d;
+      border: 2px solid #f56b6b;
+    }
+
+
+  </style>
+
+  <title>Memory Game</title>
+</head>
+
+<body>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <p>Ayo cocokkan gambarnya sebelum waktu habis! waktu kamu 35 detik!</p>
+    </div>
+  </div>
+  <div id="victoryModal" class="modal">
+    <div class="modal-content">
+      <h2>WAH WAH WAH, Selamat!</h2>
+      <p>wih <span id="victoryPlayerName"></span> hebat nih</p>
+      <p>Poin kamu : <span id="victoryPlayerPoints"></span></p>
+      <p>sisa waktu : <span id="victoryPlayerTime"></span> detik, hebat hebat!!</p>
+      <!-- <button id="victoryOKButton">OK</button> -->
+      <button id="victoryContinueButton">Lanjut Bermain</button>
+      <button id="victoryRestartButton">Keluar</button>
+
+    </div>
+  </div>
+  <div id="timeoutModal" class="modal">
+    <div class="modal-content">
+      <h2>!Waktu Habis!</h2>
+      <p><span id="timeoutPlayerName"></span> waktunya sudah habis</p>
+      <p>Poin kamu cuma <span id="timeoutPlayerPoints"></span></p>
+      <p>Sisa waktu <span id="timeoutPlayerTime"></span></p>
+      <p>berjuang lagi ya, wkwkwk</p>
+      <!-- <button id="timeoutOKButton">OK</button> -->
+      <button id="timeoutContinueButton">Lanjut Bermain</button>
+      <button id="timeoutRestartButton">Keluar</button>
+    </div>
+  </div>
+  
+  
+  <main>
+    <header>
+      <span class="player"></span>
+      <span>Timer: <span class="timer"></span></span>
+      <span>Poin: <span class="poin">00</span></span>
+    </header>
+
+
+    <div class="grid"></div>
+  </main>
+
+</body>
+
+</html>

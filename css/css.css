@@ -20,7 +20,6 @@
 
 body {
     background-image: url('../images/latar.png');
-    /* background-image: url('../images/latar2.jpg'); */
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -301,9 +300,4 @@ header {
 .heart {
   color: #8f1d1d;
   font-size: 0.85rem;
-}
-
-main + .copyright {
-  position: relative;
-  margin-top: 20px;
 }

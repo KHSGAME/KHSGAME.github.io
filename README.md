@@ -14,6 +14,4 @@ Main GitHub account: https://github.com/jennamacwe
 The **KHSGAME** account is a secondary account created solely for **GitHub Pages deployment**.
 
 ## Purpose of This Repository
-- Deployment only
 - Hosting the live version of the game
-- No active development happens here

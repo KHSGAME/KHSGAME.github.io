@@ -273,3 +273,37 @@ header {
   }
 }
 
+/* ===============================
+   COPYRIGHT
+================================ */
+
+.copyright {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.copyright a {
+  color: #8f1d1d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.heart {
+  color: #8f1d1d;
+  font-size: 0.85rem;
+}
+
+main + .copyright {
+  position: relative;
+  margin-top: 20px;
+}
